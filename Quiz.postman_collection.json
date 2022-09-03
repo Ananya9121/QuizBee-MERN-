@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "9208cc74-e437-4713-8124-818bfe19f33b",
+		"name": "Quiz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20611485"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "user question",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzExNzZkODc4YjllNmMzMzcxZTgxYzUiLCJpYXQiOjE2NjIwODg5NDgsImV4cCI6MTY2MjA5MjU0OH0.Orr5OBrtClMCBgE795XLSAON5hG2Mbg7_uf8sMOxzCo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/v1/user/test",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"v1",
+								"user",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"finalTest\",\r\n  \"email\":\"finalTest@gmail.com\",\r\n  \"password\": \"finalTest\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/v1/user/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"v1",
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"asthaG\",\r\n  \"password\": \"asthaG\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/v1/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "admin question",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n  \"Question_no\":\"1\",\r\n  \"Question\": \"What is old?\",\r\n  \"Option1\": \"1\",\r\n  \"Option2\": \"2\",\r\n  \"Option3\": \"3\",\r\n  \"Option4\": \"5\",\r\n  \"Dificulty\": 1,\r\n  \"Correct\":\"5\"\r\n},\r\n{\r\n  \"Question_no\":\"3\",\r\n  \"Question\": \"What is old?\",\r\n  \"Option1\": \"1\",\r\n  \"Option2\": \"2\",\r\n  \"Option3\": \"3\",\r\n  \"Option4\": \"5\",\r\n  \"Dificulty\": 2,\r\n  \"Correct\":\"5\"\r\n},{\r\n  \"Question_no\":\"4\",\r\n  \"Question\": \"What is old?\",\r\n  \"Option1\": \"1\",\r\n  \"Option2\": \"2\",\r\n  \"Option3\": \"3\",\r\n  \"Option4\": \"5\",\r\n  \"Dificulty\": 3,\r\n  \"Correct\":\"5\"\r\n},\r\n{\r\n  \"Question_no\":\"5\",\r\n  \"Question\": \"What is old?\",\r\n  \"Option1\": \"1\",\r\n  \"Option2\": \"2\",\r\n  \"Option3\": \"3\",\r\n  \"Option4\": \"5\",\r\n  \"Dificulty\": 4,\r\n  \"Correct\":\"5\"\r\n},\r\n{\r\n  \"Question_no\":\"6\",\r\n  \"Question\": \"What is old?\",\r\n  \"Option1\": \"1\",\r\n  \"Option2\": \"2\",\r\n  \"Option3\": \"3\",\r\n  \"Option4\": \"5\",\r\n  \"Dificulty\": 5,\r\n  \"Correct\":\"5\"\r\n},\r\n{\r\n  \"Question_no\":\"7\",\r\n  \"Question\": \"What is old?\",\r\n  \"Option1\": \"1\",\r\n  \"Option2\": \"2\",\r\n  \"Option3\": \"3\",\r\n  \"Option4\": \"5\",\r\n  \"Dificulty\": 6,\r\n  \"Correct\":\"5\"\r\n},\r\n{\r\n  \"Question_no\":\"7\",\r\n  \"Question\": \"What is old?\",\r\n  \"Option1\": \"1\",\r\n  \"Option2\": \"2\",\r\n  \"Option3\": \"3\",\r\n  \"Option4\": \"5\",\r\n  \"Dificulty\": 7,\r\n  \"Correct\":\"5\"\r\n},\r\n{\r\n  \"Question_no\":\"8\",\r\n  \"Question\": \"What is old?\",\r\n  \"Option1\": \"1\",\r\n  \"Option2\": \"2\",\r\n  \"Option3\": \"3\",\r\n  \"Option4\": \"5\",\r\n  \"Dificulty\": 8,\r\n  \"Correct\":\"5\"\r\n},\r\n{\r\n  \"Question_no\":\"9\",\r\n  \"Question\": \"What is old?\",\r\n  \"Option1\": \"1\",\r\n  \"Option2\": \"2\",\r\n  \"Option3\": \"3\",\r\n  \"Option4\": \"5\",\r\n  \"Dificulty\": 9,\r\n  \"Correct\":\"5\"\r\n},\r\n{\r\n  \"Question_no\":\"10\",\r\n  \"Question\": \"What is old?\",\r\n  \"Option1\": \"1\",\r\n  \"Option2\": \"2\",\r\n  \"Option3\": \"3\",\r\n  \"Option4\": \"5\",\r\n  \"Dificulty\": 10,\r\n  \"Correct\":\"5\"\r\n}]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/v1/admin",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"v1",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "evaluate",
+			"item": [
+				{
+					"name": "Evaluate User result",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzExOWRjODA0ZTQzZjI0OGU4YzZkMjUiLCJpYXQiOjE2NjIwOTg5MDQsImV4cCI6MTY2MjEwMjUwNH0.dEvYCcUO6sic_HkYCnWR2rooHeHHYwSZTEGLNnPEMiM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"astha\",\r\n  \"Useranswer\":[{\"Question_no\":5,\"answer\":\"5\",\"score\":0},{\"Question_no\":6,\"answer\":\"5\",\"score\":0},{\"Question_no\":7,\"answer\":\"5\",\"score\":0},{\"Question_no\":8,\"answer\":\"5\",\"score\":0},{\"Question_no\":9,\"answer\":\"5\",\"score\":0},{\"Question_no\":10,\"answer\":\"5\",\"score\":0}],\r\n  \"Totalscore\":0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/v1/user/evaluate",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"v1",
+								"user",
+								"evaluate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Result",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzBlNWRkNGU4N2ZkMjRjY2NhNjUzNmMiLCJpYXQiOjE2NjE4ODYwNDIsImV4cCI6MTY2MTg4OTY0Mn0.QTWNBkLc5aFBiJPYqv0Gs9TyPOXzLEcP8DJ2_0u4m2c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{workspaceid}}:8082/v1/user/result",
+							"host": [
+								"{{workspaceid}}"
+							],
+							"port": "8082",
+							"path": [
+								"v1",
+								"user",
+								"result"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
